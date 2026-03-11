@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eid Mubarak</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(135deg,#f4e7ff,#ece6ff,#f9f6ff);
+font-family:'Inter',sans-serif;
+
+position:relative;
+overflow:hidden;
+}
+
+/* sparkle background */
+
+body::before{
+
+content:"";
+position:absolute;
+width:200%;
+height:200%;
+
+background-image:radial-gradient(rgba(255,255,255,0.7) 1px,transparent 1px);
+background-size:60px 60px;
+
+opacity:0.5;
+
+animation:sparkle 40s linear infinite;
+
+}
+
+@keyframes sparkle{
+
+from{transform:translateY(0)}
+to{transform:translateY(-120px)}
+
+}
+
+/* card */
+
+.card{
+
+width:420px;
+max-width:90%;
+
+padding:55px 45px;
+
+background:rgba(255,255,255,0.85);
+
+border-radius:22px;
+
+text-align:center;
+
+box-shadow:0 25px 60px rgba(0,0,0,0.08);
+
+backdrop-filter:blur(6px);
+
+position:relative;
+z-index:1;
+
+}
+
+/* moon */
+
+.moon{
+
+font-size:40px;
+margin-bottom:18px;
+
+filter:drop-shadow(0 0 8px rgba(255,255,255,0.9));
+
+}
+
+/* title */
+
+h1{
+
+font-family:'Playfair Display',serif;
+font-size:36px;
+
+margin:10px 0;
+
+color:#4b3b5c;
+
+letter-spacing:1px;
+
+}
+
+/* divider */
+
+.line{
+
+width:60px;
+height:2px;
+
+background:linear-gradient(90deg,#d8c8ff,#bfa9ff);
+
+margin:22px auto;
+
+border-radius:5px;
+
+}
+
+/* message */
+
+.message{
+
+font-size:15px;
+line-height:1.7;
+color:#666;
+
+padding:0 10px;
+
+}
+
+/* signature */
+
+.signature{
+
+margin-top:30px;
+
+font-size:14px;
+
+color:#888;
+
+font-style:italic;
+
+}
+
+/* button */
+
+.btn{
+
+margin-top:35px;
+
+padding:11px 26px;
+
+border:none;
+
+border-radius:40px;
+
+background:linear-gradient(135deg,#c6b6ff,#a891ff);
+
+color:white;
+
+font-size:14px;
+
+letter-spacing:0.5px;
+
+cursor:pointer;
+
+transition:all 0.3s ease;
+
+box-shadow:0 8px 20px rgba(160,140,255,0.35);
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 12px 25px rgba(160,140,255,0.45);
+
+background:linear-gradient(135deg,#b8a5ff,#947dff);
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="moon">🌙</div>
+
+<h1>Eid Mubarak</h1>
+
+<div class="line"></div>
+
+<p class="message">
+Semoga hari yang suci ini membawa kedamaian,
+kebahagiaan, dan keberkahan untukmu dan keluarga.
+</p>
+
+<p class="signature">
+With warm wishes ✨
+</p>
+
+<button class="btn" onclick="window.location.href='herre.html'">
+Send Blessings
+</button>
+
+</div>
+
+</body>
+</html>
